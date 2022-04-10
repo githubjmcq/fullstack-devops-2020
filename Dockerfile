@@ -1,3 +1,3 @@
 FROM alpine
-RUN apk update && apk add figlet
-CMD ["figlet", "hello world"]
+COPY invertimi.txt /app/invertimi.txt
+CMD ["rev", "/app/invertimi.txt"]
